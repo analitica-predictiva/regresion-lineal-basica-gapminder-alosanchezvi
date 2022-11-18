@@ -13,7 +13,7 @@ def pregunta_01():
     Complete el código presentado a continuación.
     """
     # Lea el archivo `gm_2008_region.csv` y asignelo al DataFrame `df`
-    df = pd.read_csv(r'E:\TEMP_ MASTER\regresion-lineal-basica-gapminder-alosanchezvi-main\gm_2008_region.csv')
+    df = pd.read_csv('gm_2008_region.csv')
 
     # Asigne la columna "life" a `y` y la columna "fertility" a `X`
     y = df['life'].values
@@ -45,7 +45,7 @@ def pregunta_02():
     """
 
     # Lea el archivo `gm_2008_region.csv` y asignelo al DataFrame `df`
-    df =  pd.read_csv(r'E:\TEMP_ MASTER\regresion-lineal-basica-gapminder-alosanchezvi-main\gm_2008_region.csv')
+    df =  pd.read_csv('gm_2008_region.csv')
 
     # Imprima las dimensiones del DataFrame
     print(df.shape)
@@ -70,7 +70,7 @@ def pregunta_03():
     """
 
     # Lea el archivo `gm_2008_region.csv` y asignelo al DataFrame `df`
-    df = pd.read_csv(r'E:\TEMP_ MASTER\regresion-lineal-basica-gapminder-alosanchezvi-main\gm_2008_region.csv')
+    df = pd.read_csv('gm_2008_region.csv')
     # Asigne a la variable los valores de la columna `fertility`
     X_fertility = df['fertility'].values.reshape(df['fertility'].shape[0],1)
 
@@ -113,7 +113,7 @@ def pregunta_04():
     from sklearn.metrics import mean_squared_error
 
     # Lea el archivo `gm_2008_region.csv` y asignelo al DataFrame `df`
-    df = pd.read_csv(r'E:\TEMP_ MASTER\regresion-lineal-basica-gapminder-alosanchezvi-main\gm_2008_region.csv')
+    df = pd.read_csv('gm_2008_region.csv')
 
     # Asigne a la variable los valores de la columna `fertility`
     X_fertility = df['fertility'].values.reshape(df['fertility'].shape[0],1)
